@@ -1,0 +1,71 @@
+* {
+box-sizing: border-box;
+font-family: "Comic Sans MS", "Poppins", cursive;
+}
+
+
+body {
+background: linear-gradient(135deg, #ffd6e8, #fff);
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0;
+}
+
+
+.container {
+text-align: center;
+padding: 20px;
+}
+
+
+.character {
+width: 180px;
+animation: bounce 2s infinite;
+}
+
+
+h1 {
+font-size: 1.5rem;
+margin: 20px 0;
+}
+
+
+.buttons {
+display: flex;
+gap: 20px;
+justify-content: center;
+}
+
+
+button {
+padding: 12px 24px;
+font-size: 1.1rem;
+border: none;
+border-radius: 12px;
+cursor: pointer;
+}
+
+
+#yesBtn {
+background: #ff6fa5;
+color: white;
+}
+
+
+#noBtn {
+background: #ccc;
+}
+
+
+@keyframes bounce {
+0%, 100% { transform: translateY(0); }
+50% { transform: translateY(-10px); }
+}
+
+
+@media (max-width: 480px) {
+h1 { font-size: 1.3rem; }
+.character { width: 140px; }
+}
